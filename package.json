@@ -6,7 +6,7 @@
   "source": "index.js",
   "main": "dist/index.js",
   "engines": {
-    "node": ">=16.0.0 <17.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "lint": "eslint .",
