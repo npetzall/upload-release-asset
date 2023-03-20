@@ -11,7 +11,7 @@ const fs = __nccwpck_require__(7147);
 async function run() {
   try {
     // Get authenticated GitHub client (Ocktokit): https://github.com/actions/toolkit/tree/master/packages/github#usage
-    const octokit = github.getOctokit(core.getInput("github-token"));
+    const octokit = github.getOctokit(core.getInput('token', {required: true}));
 
     // Get the inputs from the workflow file: https://github.com/actions/toolkit/tree/master/packages/core#inputsoutputs
     const uploadUrl = core.getInput('upload_url', { required: true });
